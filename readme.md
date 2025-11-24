@@ -1,5 +1,5 @@
-✊✋✌️ Rock, Paper and Scissors with hand gesutures
-A computer vision-based Rock, Paper, Scissors game built with Python 3.13 and OpenCV.This project uses Convexity Defects (mathematical geometry) to detect hand gestures, making it lightweight and compatible with the newest Python versions where libraries like MediaPipe are not yet supported.
+✊✋✌️ Rock Paper Scissors with hand Gestures.
+A computer vision-based Rock, Paper, Scissors game built with Python 3.13 and OpenCV. This project uses Convexity Defects (mathematical geometry) to detect hand gestures, making it lightweight and compatible with the newest Python versions.
 
 ✨ Features
 Real-Time Detection: Uses computer vision to recognize hand gestures via a webcam.
@@ -8,7 +8,7 @@ Interactive HUD: Features a transparent UI, live scoring, and victory overlays.
 
 Countdown System: Arcade-style "3... 2... 1..." timer for fair play.
 
-Lightweight: No heavy machine learning models (TensorFlow/MediaPipe) required.
+Lightweight: No heavy machine learning model required.
 
 Debug Mode: Includes a threshold view to help calibrate lighting.
 
@@ -26,13 +26,13 @@ Bash
 
 pip install opencv-python numpy
 🚀 How to Run
-Save the game code as game.py.
+Save the game code as gesture_rps.py.
 
 Run the script:
 
 Bash
 
-python gesture_rps.py
+python game.py
 Two windows will open:
 
 Rock Paper Scissors UI: The main game screen.
@@ -71,7 +71,7 @@ Python
 # Change 0 to 1
 cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 Jumpy / Inaccurate Detection
-Since this version relies on color thresholding instead of AI:
+Since this version relies on color thresholding.
 
 Lighting: Ensure the room is well-lit.
 
@@ -80,7 +80,7 @@ Background: Use a plain wall behind your hand.
 Shadows: Avoid strong shadows inside the green box.
 
 🧠 How it Works (The Math)
-This program uses Convexity Defects:
+Instead of AI, this program uses Convexity Defects:
 
 It finds the Contour (outline) of your hand.
 
@@ -92,7 +92,8 @@ It calculates the Defects (the deep gaps between fingers).
 
 1 Deep Gap: Scissors
 
->2 Gaps: Paper
+2 Gaps: Paper
+
 
 Authors: Praveen Thanvi (233501167), Khush Purohit (233501093) and Yuvraj Suthar (233501236)
 Built with: Python & OpenCV
