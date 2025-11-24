@@ -2,6 +2,7 @@
 A computer vision-based Rock, Paper, Scissors game built with Python 3.13 and OpenCV. This project uses Convexity Defects (mathematical geometry) to detect hand gestures, making it lightweight and compatible with the newest Python versions.
 
 ✨ Features
+
 Real-Time Detection: Uses computer vision to recognize hand gestures via a webcam.
 
 Interactive HUD: Features a transparent UI, live scoring, and victory overlays.
@@ -25,7 +26,9 @@ Install the required libraries using pip:
 Bash
 
 pip install opencv-python numpy
+
 🚀 How to Run
+
 Save the game code as gesture_rps.py.
 
 Run the script:
@@ -33,6 +36,7 @@ Run the script:
 Bash
 
 python game.py
+
 Two windows will open:
 
 Rock Paper Scissors UI: The main game screen.
@@ -40,6 +44,7 @@ Rock Paper Scissors UI: The main game screen.
 Hand Calibration: A black and white view for debugging.
 
 🎮 How to Play
+
 Position your hand: Place your hand inside the Green Box on the screen.
 
 Calibrate: Ensure your hand looks White and the background looks Black in the calibration window. (Use a plain background for best results).
